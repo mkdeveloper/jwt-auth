@@ -15,7 +15,8 @@ export async function middleware(request: NextRequest) {
       return NextResponse.next()
     }
     if (!headersToken) {
-      return NextResponse.redirect(`http://localhost:3000/login`)
+      // return NextResponse.redirect(`http://localhost:3000/login`)
+      return NextResponse.redirect(`https://jwt-auth-phi.vercel.app/login`)
       // return NextResponse.json(
       //   { error: { message: 'Token Not Found' } },
       //   { status: 400 }
