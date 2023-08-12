@@ -1,7 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Protected = () => {
-  return <div>Protected Page</div>
-}
+  return (
+    <div className="flex w-full h-screen justify-center items-center">
+      <h1>Protected Page</h1>
+    </div>
+  );
+};
 
-export default Protected
+export default Protected;
